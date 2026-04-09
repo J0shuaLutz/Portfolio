@@ -31,7 +31,7 @@
   <section class="Hero" id="Hero">
     
     <div class="HeroImageContainer">
-      <img class="HeroImage" src="/Portfolio/images/Projects/LiK/LiK-HeroPanel.png" alt="HeroPanel"/>  
+      <img class="HeroImage" src="/images/Projects/LiK/LiK-HeroPanel.png" alt="HeroPanel"/>  
     </div>
     <frame class = "Infobox" :bgColor=frameColor :BorderRadius=borderRadius>
       <div class="horizontalInfoGrid">
