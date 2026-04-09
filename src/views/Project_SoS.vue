@@ -31,7 +31,7 @@
   <section class="Hero" id="Hero">
     
     <div class="HeroImageContainer">
-      <img class="HeroImage" src="/images/Projects/SoS/SoS-HeroPanel.png" alt="HeroPanel"/>  
+      <img class="HeroImage" src="/Portfolio/images/Projects/SoS/SoS-HeroPanel.png" alt="HeroPanel"/>  
     </div>
     <frame class = "Infobox" :bgColor=frameColor :BorderRadius=borderRadius>
       <div class="horizontalInfoGrid">
@@ -77,7 +77,7 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Gameplay Programmer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/SoS/SoS-InfoPanel-Spawner.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Spawner.jpg">
           <h2 class="highlight"> Spawn-System</h2>
           <h4>
             To encourage player movement, a trigger-based spawn system was implemented. As players move through these triggers placed 
@@ -85,7 +85,7 @@
             Each trigger contains predefined spawn points with data on NPC types, level context, and difficulty.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/SoS/SoS-InfoPanel-NPC.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-NPC.jpg">
           <h2 class="highlight"> NPC / Enemys</h2>
           <h4>
             To efficiently implement and expand different enemy types, a scalable NPC system was developed. It is based on a 
@@ -93,7 +93,7 @@
             Interactions such as damage types and attacks are handled through an interface-based system.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/SoS/SoS-InfoPanel-Weapon.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Weapon.jpg">
           <h2 class="highlight"> Special Attacks</h2>
           <h4>
             Special abilities unlocked via meta progression were highly diverse in their requirements, with minimal overlap in 
@@ -105,7 +105,7 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Producer / Team Lead">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/SoS/SoS-InfoPanel-Producer.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Producer.jpg">
           <h4>
             During phase two, I led production and team management, including:
           </h4>

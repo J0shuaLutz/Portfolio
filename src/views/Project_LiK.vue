@@ -31,7 +31,7 @@
   <section class="Hero" id="Hero">
     
     <div class="HeroImageContainer">
-      <img class="HeroImage" src="/images/Projects/LiK/LiK-HeroPanel.png" alt="HeroPanel"/>  
+      <img class="HeroImage" src="/Portfolio/images/Projects/LiK/LiK-HeroPanel.png" alt="HeroPanel"/>  
     </div>
     <frame class = "Infobox" :bgColor=frameColor :BorderRadius=borderRadius>
       <div class="horizontalInfoGrid">
@@ -82,7 +82,7 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Gameplay Programmer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/LiK/LiK-InfoPanel-Architecture.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-Architecture.jpg">
           <h2 class="highlight">Software Architecture</h2>
           <h4>
             Throughout production, I was the sole programmer, responsible for implementing all gameplay mechanics. 
@@ -90,7 +90,7 @@
             prototyping with placeholder assets, which were seamlessly handed off to artists.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/LiK/LiK-InfoPanel-levelsetup.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-levelsetup.jpg">
           <h2 class="highlight">Level System</h2>
           <h4>
             Although each level appears independent to the player, the game runs in a single scene to maintain immersion. 
@@ -98,7 +98,7 @@
             This is handled through trigger boxes that notify the manager when a player enters a room.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/LiK/LiK-InfoPanel-lock.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-lock.jpg">
           <h2 class="highlight">Light and Lock</h2>
           <h4>
             Lighting is controlled via a Line Renderer, while a script handles interactions with hit objects, including mirrors that 
@@ -110,7 +110,7 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Level Designer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/LiK/LiK-InfoPanel-learn.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-learn.jpg">
           <h2 class="highlight">Learning Through Play</h2>
           <h4>
             The game was designed to let players experience the mechanics during gameplay. Therefore, the features were 
@@ -118,7 +118,7 @@
             be clearly understandable, while at the same time engaging enough to maintain the players’ motivation.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/images/Projects/LiK/LiK-InfoPanel-complexity.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-complexity.jpg">
           <h2 class="highlight">Testing and Challenge</h2>
           <h4>
             As players progress, previously introduced mechanics are expanded to increase complexity. This is achieved 

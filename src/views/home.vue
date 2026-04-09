@@ -370,7 +370,7 @@
                 Title="Light is Key"
                 Description="Award winning first-person puzzle."
                 ProjectStyle="Student Project"
-                Image="/images/Projects/LiK/LiK-FrontPanel.jpg"
+                Image="/Portfolio/images/Projects/LiK/LiK-FrontPanel.jpg"
                 Path="/LightisKey"
             />
         </itemlist>
@@ -381,28 +381,28 @@
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
         </itemlist>
@@ -413,14 +413,14 @@
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
         </itemlist>
@@ -431,14 +431,14 @@
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
                 Description="Description will be come soon. "
                 ProjectStyle="project"
-                Image="/images/Projects/FrontPanel-Basic.jpg"
+                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
             />
         </itemlist>
