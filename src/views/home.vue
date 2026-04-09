@@ -363,7 +363,7 @@
                 Title="Sound of Survival"
                 Description="First Person Rythm Shooter released on Steam."
                 ProjectStyle="Student Project"
-                Image="/images/Projects/SoS/SoS-FrontPanel.png"
+                Image="images/Projects/SoS/SoS-FrontPanel.png"
                 Path="/SoundOfSurvival"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
