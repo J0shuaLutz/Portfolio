@@ -1,0 +1,186 @@
+<script lang="ts">
+  import ShaderBackground from '../components/ShaderBackground.vue';
+  import itemlist from '@/components/ItemList.vue';
+  import ProjectInfo from '../components/ProjectInfo.vue'
+  import BackButton from '../components/BackButton.vue'
+  import frame from '../components/frame.vue'
+
+  export default{
+    name: 'Project',
+    components: {
+      ShaderBackground,
+      itemlist,
+      ProjectInfo,
+      BackButton,
+      frame
+    },
+    data(){
+      return {
+        frameColor: "rgba(1, 41, 84, 0.75)",
+        frameColor2: "rgba(159,195,245,1)",
+        frameColor3: "rgba(255,109,218,1)",
+        frameColor4: "rgba(1, 57, 104,1)",
+        borderRadius: "10px"
+      }
+    }
+  }
+</script>
+
+<template>
+  <ShaderBackground/>
+  <section class="Hero" id="Hero">
+    
+    <div class="HeroImageContainer">
+      <img class="HeroImage" src="/images/Projects/DreamSequence/DreamSequence-HeroPanel.png" alt="HeroPanel"/>  
+    </div>
+    <frame class = "Infobox" :bgColor=frameColor :BorderRadius=borderRadius>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">Challenge</h5>
+        <h7>
+          <a href="https://www.youtube.com/watch?v=_Hp8LjAUkJ0&t=376s" target="_blank">Dream Sequence</a>
+        </h7>
+      </div>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">Engine</h5>
+        <h6>Blender</h6>
+      </div>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">Coding</h5>
+        <h6>Geometry Nodes in Blender</h6>
+      </div>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">View</h5>
+        <h7>
+          <a href="https://www.youtube.com/watch?v=96ooAx9tvc4&t=1052s" target="_blank">17:32</a>
+        </h7>
+      </div>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">Release</h5>
+        <h6>22.05.2026</h6>
+      </div>
+    </frame>
+    <h1 class="Title">Dream Sequence</h1>
+    <h4 class="centerText TitleText">
+      The goal was to create a Venom-like structure growing organically over the body of the character 
+      Justicia. Instead of animating each step manually, the entire motion was driven purely by a growth 
+      parameter. The animation needed to feel believable and physically coherent, while keeping the level 
+      of control appropriate to its intended use. Performance was dependent on available hardware and not 
+      required to run in real time.
+    </h4>
+    <BackButton :BorderRadius=borderRadius :ButtonColor=frameColor></BackButton>
+    </section>
+    <section>
+      <video class="video" autoplay loop muted playsinline>
+        <source src="/images/Projects/DreamSequence/DreamSequence.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <section class="list" id="Info1">
+      <itemlist :bgColor="frameColor" Title="animated veins">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-InfoPanel.jpg">
+          <h2 class="highlight">Surface Sampling & Spatial Distribution</h2>
+          <h4>
+            To manage computational cost, sample points are generated along the geometry and split into primary 
+            and secondary veins. Primary veins define the main structure with slight offset, while secondary 
+            veins stay close to the surface for added detail. This separation enables controlled variation and 
+            layering.
+          </h4>
+        </ProjectInfo>
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-InfoPanel-Logic.jpg">
+          <h2 class="highlight">Vein Generation Logic</h2>
+          <h4>
+            Connections are created between positions based on proximity. At each point, it is determined whether it acts as a 
+            start or end node. A parameterized animation (0–0.8) drives the growth of volumetric lines between these points, 
+            forming the vein structure.
+          </h4>
+        </ProjectInfo>
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-InfoPanel-growth.jpg">
+          <h2 class="highlight">Growth System</h2>
+          <h4>
+            The overall growth emerges by iterating this logic across the geometry, depending on its size and complexity. 
+            Used positions are excluded from further iterations, and each new starting point triggers an additional growth 
+            pass. As a result, computational cost and performance scale with the object’s size and the number of sampled 
+            positions.
+          </h4>
+        </ProjectInfo>
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-InfoPanel-Loop.jpg">
+          <h2 class="highlight">Iterative Growth System</h2>
+          <h4>
+            Vein growth is generated by iteratively applying the connection logic across sampled positions, scaled to 
+            the mesh. Used positions are excluded to prevent overlap, while new nodes trigger further iterations, 
+            creating an organic spread.
+          </h4>
+        </ProjectInfo>
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-InfoPanel-Input.jpg">
+          <h2 class="highlight">Control & Performance</h2>
+          <h4>
+            The overall growth is controlled via a single float parameter, defining both 
+            the number of iteration passes and the current growth state of the system. As 
+            a result, computational cost and performance scale directly with the mesh size 
+            and the number of sampled positions, allowing for controllable trade-offs 
+            between visual fidelity and processing time.
+          </h4>
+        </ProjectInfo>
+      </itemlist>
+    </section>
+</template>
+
+<style scoped>
+.Hero{
+  margin:0;
+  padding:0;
+}
+
+.HeroImageContainer{
+  margin:0;
+  height: 70vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.HeroImage{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom center;
+  display: block;
+  z-index: -1;
+}
+
+.Title{
+  margin-top: -7.5%;
+}
+
+.TitleText{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Infobox{
+  position: absolute;
+  transform: translateY(-100%);
+  width:90%;
+  left:5%;
+  right:5%;
+  top: 60vh;
+  transition: 1s;
+}
+
+@media (min-width: 759px){ 
+  .Infobox{
+    position: absolute;
+  transform: translateY(-100%);
+  width:30%;
+  left:65%;
+  right:5%;
+  top: 55vh;
+  }
+}
+</style>

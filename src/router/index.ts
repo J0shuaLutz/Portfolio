@@ -5,6 +5,8 @@ import progress from '../views/Progress.vue'
 import Project_Basis from '../views/Project_Basis.vue'
 import Project_SoS from '../views/Project_SoS.vue'
 import Project_LiK from '../views/Project_LiK.vue'
+import Project_Materials from '../views/Project_Materials.vue'
+import Project_DreamSequence from '@/views/Project_DreamSequence.vue'
 
 // Typisierung der Routen mit RouteRecordRaw
 const routes: Array<RouteRecordRaw> = [
@@ -32,6 +34,16 @@ const routes: Array<RouteRecordRaw> = [
         path: '/LightisKey',
         name: 'LightisKey',
         component: Project_LiK
+     },
+     {
+         path: '/Materials',
+         name: "Materials",
+         component: Project_Materials
+     },
+     {
+         path: '/DreamSequence',
+         name: "DreamSequence",
+         component: Project_DreamSequence
      }
 ]
 

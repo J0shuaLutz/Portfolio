@@ -379,28 +379,7 @@
         <itemlist :bgColor="frameColor" Title="Code">
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
-            />
-            <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
-            />
-            <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
-            />
-            <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
+                Description="Description will come soon. "
                 ProjectStyle="project"
                 Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
@@ -410,18 +389,18 @@
     <section class="list" id = "TechArt">
         <itemlist :bgColor="frameColor" Title="Tech Art">
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
+                Title="Shader & Materials"
+                Description="Different Shader in UE 5"
+                ProjectStyle="Part of the Bachelor-thesis"
+                Image="/Portfolio/images/Projects/Material/Material-FrontPanel.png"
+                Path="/Materials"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
+                Title="Dream Sequence"
+                Description="Dynamic roots were created using Blender Geometry Nodes."
+                ProjectStyle="Render Challenge"
+                Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-FrontPanel.png"
+                Path="/DreamSequence"
             />
         </itemlist>
     </section>
@@ -429,14 +408,7 @@
         <itemlist :bgColor="frameColor" Title="Other">
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Work in Progress"
-                Description="Description will be come soon. "
-                ProjectStyle="project"
-                Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
-                Path="/progress"
-            />
-            <item :BorderRadius=borderRadius :ButtonColor=frameColor
-                Title="Work in Progress"
-                Description="Description will be come soon. "
+                Description="Description will come soon. "
                 ProjectStyle="project"
                 Image="/Portfolio/images/Projects/FrontPanel-Basic.jpg"
                 Path="/progress"
