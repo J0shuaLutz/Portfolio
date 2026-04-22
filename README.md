@@ -40,3 +40,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## npm run build
+## git add .
+## git commit -m "update"
+## git push
+## npm run deploy
