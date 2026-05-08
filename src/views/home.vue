@@ -379,14 +379,14 @@
         <itemlist :bgColor="frameColor" Title="Code">
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="3D Grid"
-                Description="A modular 3D grid system for Unreal Engine with C++ and Blueprint implementation."
+                Description="A modular 3D grid system for Unreal Engine with C++."
                 ProjectStyle="Unreal Engine 5.7 Plugin"
                 Image="/Portfolio/images/Projects/Grid/Grid-FrontPanel.png"
                 Path="/Grid"
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Ability and Status System"
-                Description="A System for Abilities and Status Effects for Unreal Engine with C++ and Blueprint implementation."
+                Description="A System for Abilities and Status Effects for Unreal Engine with C++."
                 ProjectStyle="Unreal Engine 5.7 Plugin"
                 Image="/Portfolio/images/Projects/AaSS/AaSS-FrontPanel.png"
                 Path="/AbilityAndStatusSystem"
