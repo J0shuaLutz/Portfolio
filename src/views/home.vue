@@ -386,7 +386,7 @@
             />
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Ability and Status System"
-                Description="A System for Abilities and Status Effects for Unreal Engine with C++."
+                Description="A System for Abilities and Status Effects in Unreal Engine with C++."
                 ProjectStyle="Unreal Engine 5.7 Plugin"
                 Image="/Portfolio/images/Projects/AaSS/AaSS-FrontPanel.png"
                 Path="/AbilityAndStatusSystem"
