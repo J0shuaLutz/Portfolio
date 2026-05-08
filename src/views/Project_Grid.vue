@@ -50,6 +50,10 @@
         <h5 class="rightText">Release</h5>
         <h6>private Use</h6>
       </div>
+      <div class="horizontalInfoGrid">
+        <h5 class="rightText">Access</h5>
+        <h6>on request</h6>
+      </div>
     </frame>
     <h1 class="Title">3D Grid</h1>
     <h4 class="centerText TitleText">
