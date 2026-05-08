@@ -9,7 +9,7 @@ import Project_Materials from '../views/Project_Materials.vue'
 import Project_DreamSequence from '@/views/Project_DreamSequence.vue'
 import Project_Grid from '@/views/Project_Grid.vue'
 import Project_AaSS from '@/views/Project_AaSS.vue'
-import Project_Dnd from '@/views/Project_Dnd.vue'
+import Project_Dnd from '@/views/Project_DnD.vue'
 
 // Typisierung der Routen mit RouteRecordRaw
 const routes: Array<RouteRecordRaw> = [
