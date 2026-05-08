@@ -1,0 +1,162 @@
+@import './base.css';
+
+:root {
+  --textColor1: #9fc3f5;
+  --textColor2: #ff6dd5;
+  --textColor3: #ffffff;
+  --textColor4: #013968;
+  --textColor5: #8fffcb;
+  --textColor6: #ffd5a6;
+  --textColor7: #00c8ff;
+}
+
+html, body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Michroma', sans-serif;
+  text-align: center;
+  color: var(--textColor3);
+  font-size: clamp(35px, 3.5vw, 70px);
+}
+
+h2{
+  font-family: 'Michroma', sans-serif;
+  text-align: center;
+  color: var(--textColor1);
+  font-size: clamp(16px,2.5vw,24px);
+  margin: 5px;
+}
+
+h3{
+  font-family: 'Michroma', sans-serif;
+  text-align: center;
+  color: var(--textColor4);
+  font-size: clamp(14px,2.5vw,18px);
+  margin: 1px;
+}
+
+h4{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: var(--textColor1);
+  font-size: clamp(16px,2.5vw,24px);
+  margin: 5px;
+}
+
+li{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: var(--textColor1);
+  font-size: clamp(16px,2.5vw,24px);
+  margin: 7px;
+}
+
+h5{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: var(--textColor1);
+  font-size: 16px;
+  margin: 5px;
+}
+
+h6{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: var(--textColor2);
+  font-size: 16px;
+  margin: 5px;
+}
+
+h7{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: var(--textColor7);
+  font-size: 16px;
+  margin: 5px;
+}
+
+a{
+  color: inherit;
+}
+
+.rightText{
+    text-align: right;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.leftText{
+  text-align: left;
+}
+
+.highlight{
+  color: var(--textColor2);
+}
+
+.highlight2{
+  font-style: italic;
+}
+
+.highlight3{
+  font-weight: 300;
+}
+
+.highlight4{
+  font-size: clamp(30px,2.5vw,48px);
+}
+
+.green{
+  color: var(--textColor5);
+}
+
+.red{
+  color: var(--textColor6);
+}
+
+.white{
+  color: var(--textColor3);
+}
+
+
+
+.SmallSpacer{
+  margin-bottom: 5px;
+}
+
+.Spacer{
+  margin-bottom: 25px;
+}
+
+.Image{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain
+}
+
+.list{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.listing{
+  list-style-type: disc;
+  margin-left: 20px;
+  padding:0;
+}
+
+.horizontalInfoGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    justify-content: start;
+    column-gap: 10px;
+}

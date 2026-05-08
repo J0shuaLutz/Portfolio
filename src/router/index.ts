@@ -1,0 +1,76 @@
+import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router'
+
+import Home from '../views/home.vue'
+import progress from '../views/Progress.vue'
+import Project_Basis from '../views/Project_Basis.vue'
+import Project_SoS from '../views/Project_SoS.vue'
+import Project_LiK from '../views/Project_LiK.vue'
+import Project_Materials from '../views/Project_Materials.vue'
+import Project_DreamSequence from '@/views/Project_DreamSequence.vue'
+import Project_Grid from '@/views/Project_Grid.vue'
+import Project_AaSS from '@/views/Project_AaSS.vue'
+import Project_Dnd from '@/views/Project_Dnd.vue'
+
+// Typisierung der Routen mit RouteRecordRaw
+const routes: Array<RouteRecordRaw> = [
+    {
+        path: '/',
+        name: 'home',
+        component: Home
+    },
+     {
+        path: '/progress',
+        name: 'progress',
+        component: progress
+     },
+     {
+        path: '/BasisProject',
+        name: 'BasisProject',
+        component: Project_Basis
+     },
+     {
+        path: '/SoundOfSurvival',
+        name: 'SoundOfSurvival',
+        component: Project_SoS
+     },
+     {
+        path: '/LightisKey',
+        name: 'LightisKey',
+        component: Project_LiK
+     },
+     {
+         path: '/Materials',
+         name: "Materials",
+         component: Project_Materials
+     },
+     {
+         path: '/DreamSequence',
+         name: "DreamSequence",
+         component: Project_DreamSequence
+     },
+     {
+         path: '/Grid',
+         name: "Grid",
+         component: Project_Grid
+     },
+     {
+        path: '/AbilityAndStatusSystem',
+        name: "AbilityAndStatusSystem",
+        component: Project_AaSS
+     },
+     {
+        path: '/Dnd',
+        name: "Dnd",
+        component: Project_Dnd
+     }
+]
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior() {
+    return { top: 0 }
+  }
+})
+
+export default router
