@@ -62,7 +62,7 @@
       <div class="horizontalInfoGrid">
         <h5 class="rightText">Document</h5>
         <h7>
-          <a href="public/images/Projects/LiK/Lik_LevelDesign-JoshuaNicolaLutz.pdf" target="_blank" rel="noopener">Level Design (german) </a>
+          <a href="/Portfolio/images/Projects/LiK/Lik_LevelDesign-JoshuaNicolaLutz.pdf" target="_blank" rel="noopener">Level Design (german) </a>
         </h7>
       </div>
       <div class="horizontalInfoGrid">
