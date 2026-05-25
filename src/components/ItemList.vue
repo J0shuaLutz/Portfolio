@@ -34,17 +34,21 @@
     .ScrollWrap{
         display: flex;
         align-items: center;
-        justify-content: start;
-        width: max-content;
-        max-width: 100%;
+        justify-content: flex-start;
+
+        width: 100%;
         overflow-x: auto;
-        margin-left:auto;
-        margin-right:auto;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
 
     .ScrollList{
         display: flex;
-        column-gap: 10px;
-        object-fit: fill;
+        flex-direction: row;
+        gap: 10px;
     }
 </style>

@@ -72,6 +72,7 @@
             max-width: 90vw;
             max-height: 180vw;
             transition: 1s;
+            scroll-snap-align: center;
         }
 
     .InfoText{
@@ -98,6 +99,7 @@
             max-width: 90vh;
             max-height: 90vh;
             transition: 1s;
+            scroll-snap-align: center;
         }
     }
 </style>

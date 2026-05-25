@@ -27,7 +27,7 @@
     },
     methods:{
       setActive(id: string) {
-        this.activeId = this.activeId === id ? null : id;
+        this.activeId = this.activeId === id ? null : id; 
       }
     }
   }
