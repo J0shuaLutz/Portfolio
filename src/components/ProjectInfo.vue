@@ -6,10 +6,12 @@
     :class="{ expanded: isExpanded}"
     @click="toggle">
         <img class="Image" :src="Image" alt="InfoImage" :style = "{'--BorderRadius': BorderRadius}"/>
-        <div class="InfoText">
+        <div class="InfoContent">
             <slot>
-
             </slot>
+            <div class ="Spacer">
+
+            </div>
         </div>
     </div>
 
@@ -43,6 +45,7 @@
         margin: 20px;
         cursor: pointer;
         transition: 1s;
+        align-items: start;
     }
 
     .Image{
@@ -52,7 +55,6 @@
         border-bottom-right-radius: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     .device{
@@ -73,8 +75,9 @@
             transition: 1s;
         }
 
-    .InfoText{
-        padding: 2%;
+    .InfoContent{
+        padding: 10px;
+        padding-bottom: 20px;
         height: 100%;
         overflow-y: auto;
     }
