@@ -6,11 +6,10 @@
     :class="{ expanded: isExpanded}"
     @click="toggle">
         <img class="Image" :src="Image" alt="InfoImage" :style = "{'--BorderRadius': BorderRadius}"/>
-        <div class="InfoContent">
+        <div class="InfoText">
             <slot>
             </slot>
-            <div class ="Spacer">
-
+            <div class="Spacer">
             </div>
         </div>
     </div>
@@ -45,7 +44,6 @@
         margin: 20px;
         cursor: pointer;
         transition: 1s;
-        align-items: start;
     }
 
     .Image{
@@ -55,6 +53,7 @@
         border-bottom-right-radius: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
     .device{
@@ -67,7 +66,7 @@
     }
 
     .device.expanded {
-            grid-template-rows: 2fr 1fr;
+            grid-template-rows: 2.25fr 1fr;
             min-width: 90vw;
             min-height: 90vw;
             max-width: 90vw;
@@ -75,10 +74,10 @@
             transition: 1s;
         }
 
-    .InfoContent{
+    .InfoText{
+        height: 100%;
         padding: 10px;
         padding-bottom: 20px;
-        height: 100%;
         overflow-y: auto;
     }
 
@@ -93,11 +92,11 @@
         }
 
         .device.expanded {
-            grid-template-rows: 4fr 1fr;
-            min-width: 90vw;
-            min-height: 90vw;
-            max-width: 90vw;
-            max-height: 90vw;
+            grid-template-rows: 3fr 1fr;
+            min-width: 90vh;
+            min-height: 90vh;
+            max-width: 90vh;
+            max-height: 90vh;
             transition: 1s;
         }
     }
