@@ -160,7 +160,7 @@
             <div id="DiceCodeMobilePos" :style="{position:'absolute', top:'17vw', left:'50%', transform:'translateX(16.5vw)'}"></div>
             <navi Title="Tech Art" id="DiceTechArtMobile" x="-35%" y='60vw' Target="TechArt"/>
             <div id="DiceTechArtMobilePos" :style="{position:'absolute', top:'43vw', left:'50%', transform:'translateX(-16.5vw)'}"></div>
-            <navi Title="Other" id="DiceOtherMobile" x="35%" y='60vw' Target="Other"/>
+            <navi Title="Design" id="DiceOtherMobile" x="35%" y='60vw' Target="Design"/>
             <div id="DiceOtherMobilePos" :style="{position:'absolute', top:'44vw', left:'50%', transform:'translateX(16.5vw)'}"></div>
             <img class="HeroImageMobile" src="/images/Dice.png" alt="Dies">
         </div>
