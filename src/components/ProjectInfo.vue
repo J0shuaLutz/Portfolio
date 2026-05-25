@@ -65,11 +65,11 @@
     }
 
     .device.expanded {
-            grid-template-rows: 4fr 1fr;
+            grid-template-rows: 2fr 1fr;
             min-width: 90vw;
             min-height: 90vw;
             max-width: 90vw;
-            max-height: 90vw;
+            max-height: 180vw;
             transition: 1s;
         }
 
