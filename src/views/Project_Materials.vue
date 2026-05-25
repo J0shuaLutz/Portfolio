@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -61,7 +68,10 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Shader">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Wood.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Wood.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight">Single Texture Material</h2>
           <h4>
             The color texture is used as the base for specular, roughness, and normal data. The blue channel 
@@ -69,7 +79,10 @@
             texture-dependent and, for this relatively smooth material, provides a sufficient approximation.         
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Tiles.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Tiles.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight">Tiling</h2>
           <h4>
             The Fracture node generates a grid-based tile structure with adjustable density and grout width. 
@@ -78,7 +91,10 @@
             assigned a randomized color within a defined range.      
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Stone.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Stone.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight">Noise</h2>
           <h4>
             The stone texture is based on two overlapping masking Voronoi patterns, suitable for 
@@ -87,7 +103,10 @@
              where a simple texture can be more efficient.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-WoodPlanks.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-WoodPlanks.jpg"
+        id="1-4"
+        :isExpanded="activeId === '1-4'"
+        @toggle="setActive">
           <h2 class="highlight">Projection</h2>
           <h4>
             This material is designed for floors and adjacent surfaces, using world-position mapping for projection. An extended Fracture setup 
@@ -95,7 +114,10 @@
             Specular, roughness, and normal data are derived from the texture and grid.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Performance.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Material/Material-InfoPanel-Performance.jpg"
+        id="1-5"
+        :isExpanded="activeId === '1-5'"
+        @toggle="setActive">
           <h2 class="highlight">Performance</h2>
           <h4>
             These materials demonstrate that, in some cases, it is more efficient to precompute 

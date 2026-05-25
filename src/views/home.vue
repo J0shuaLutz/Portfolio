@@ -107,7 +107,7 @@
             <div id="DiceCodePos" :style="{position:'absolute', top:'9.5vw', left:'50%', transform:'translateX(9.7vw)'}"></div>
             <navi Title="Tech Art" id="DiceTechArt" x="-35%" y='15vw' Target="TechArt"/>
             <div id="DiceTechArtPos" :style="{position:'absolute', top:'25.25vw', left:'50%', transform:'translateX(-9.7vw)'}"></div>
-            <navi Title="Other" id="DiceOther" x="35%" y='15vw' Target="Other"/>
+            <navi Title="Design" id="DiceOther" x="35%" y='15vw' Target="Design"/>
             <div id="DiceOtherPos" :style="{position:'absolute', top:'25.5vw', left:'50%', transform:'translateX(9.5vw)'}"></div>
             <img class="HeroImage" src="/images/Dice.png" alt="Dies"> 
         </div>
@@ -411,8 +411,8 @@
             />
         </itemlist>
     </section>
-    <section class="list" id = "Other">
-        <itemlist :bgColor="frameColor" Title="Other">
+    <section class="list" id = "Design">
+        <itemlist :bgColor="frameColor" Title="Design">
             <item :BorderRadius=borderRadius :ButtonColor=frameColor
                 Title="Dungeons & Dragons Master"
                 Description="Dungeon-Master for more than 10 years, creating an open world campaign."

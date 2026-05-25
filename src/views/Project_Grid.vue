@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -68,7 +75,10 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Structure">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Separation.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Separation.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight">Separation</h2>
           <h4>
             The grid is divided into three core components to improve readability and usability. The core logic and global 
@@ -76,7 +86,10 @@
             referencing. The GridData component manages all relevant data and referenced assets.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Data.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Data.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight">Grid-Data</h2>
           <h4>
             The GridData contains the cell types as an enum, which is the only part that needs to be extended in C++. It also stores 
@@ -84,7 +97,10 @@
             information is defined.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Manager.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Manager.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight">Grid-Manager</h2>
           <h4>
             The GridManager provides a static getter for global access, allowing the grid to be created, expanded, and modified via Blueprints. 
@@ -92,7 +108,10 @@
             while cell access is handled internally through a map storing the core grid data.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Renderer.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Renderer.jpg"
+        id="1-4"
+        :isExpanded="activeId === '1-4'"
+        @toggle="setActive">
           <h2 class="highlight">Grid-Renderer</h2>
           <h4>
             The GridRenderer is solely responsible for spawning actors and instances as well as removing selected cells. All cells are managed 
@@ -103,7 +122,10 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Content">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Spawn.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Spawn.jpg"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
+        @toggle="setActive">
           <h2 class="highlight">Async Spawning</h2>
           <h4>
             To ensure the grid is usable on all hardware, all cells are loaded asynchronously. This required implementing delegates to react 
@@ -111,7 +133,10 @@
             regardless of their number or loading time.        
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Instance.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-Instance.jpg"
+        id="2-2"
+        :isExpanded="activeId === '2-2'"
+        @toggle="setActive">
           <h2 class="highlight">Actor or Instance</h2>
           <h4>
             During the spawning process, the user can choose whether a cell is created as an instance or an actor. This is important to distinguish 
@@ -119,7 +144,10 @@
             an individual draw call.          
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-SoftReference.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/Grid/Grid-InfoPanel-SoftReference.jpg"
+        id="2-3"
+        :isExpanded="activeId === '2-3'"
+        @toggle="setActive">
           <h2 class="highlight">Soft References</h2>
           <h4>
             Actors are stored as soft references within the data asset, ensuring that memory is only used when they are actually needed. 

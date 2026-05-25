@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -31,7 +38,7 @@
   <section class="Hero" id="Hero">
     
     <div class="HeroImageContainer">
-      <img class="HeroImage" src="/images/Projects/HeroPanel-Basic.png" alt="HeroPanel"/>  
+      <img class="HeroImage" src="/Portfolio/images/Projects/HeroPanel-Basic.png" alt="HeroPanel"/>  
     </div>
     <frame class = "Infobox" :bgColor=frameColor :BorderRadius=borderRadius>
       <div class="horizontalInfoGrid">
@@ -63,27 +70,45 @@
       sanctus est Lorem ipsum dolor sit amet. 
     </h4>
     <BackButton :BorderRadius=borderRadius :ButtonColor=frameColor></BackButton>
-    </section>
-    <section class="list" id="Info1">
-      <itemlist :bgColor="frameColor" Title="Project Description 1">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-      </itemlist>
-    </section>
-    <section class="list" id="Info2">
-      <itemlist :bgColor="frameColor" Title="Project Description 2">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4>
-        </ProjectInfo>
-      </itemlist>
-    </section>
+  </section>
+  <section class="list" id="Info1">
+    <itemlist :bgColor="frameColor" Title="Project Description 1">
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="1-1"
+      :isExpanded="activeId === '1-1'"
+      @toggle="setActive">
+      </ProjectInfo>
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="1-2"
+      :isExpanded="activeId === '1-2'"
+      @toggle="setActive">
+      </ProjectInfo>
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="1-3"
+      :isExpanded="activeId === '1-3'"
+      @toggle="setActive">
+      </ProjectInfo>
+    </itemlist>
+  </section>
+  <section class="list" id="Info2">
+    <itemlist :bgColor="frameColor" Title="Project Description 2">
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="2-1"
+      :isExpanded="activeId === '2-1'"
+      @toggle="setActive">
+      </ProjectInfo>
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="2-2"
+      :isExpanded="activeId === '2-2'"
+      @toggle="setActive">
+      </ProjectInfo>
+      <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/InfoPanel-Basic.jpg"
+      id="2-3"
+      :isExpanded="activeId === '2-3'"
+      @toggle="setActive">
+      </ProjectInfo>
+    </itemlist>
+  </section>
 </template>
 
 <style scoped>

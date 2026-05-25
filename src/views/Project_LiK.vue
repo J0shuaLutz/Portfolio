@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -82,7 +89,10 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Gameplay Programmer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-Architecture.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-Architecture.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight">Software Architecture</h2>
           <h4>
             Throughout production, I was the sole programmer, responsible for implementing all gameplay mechanics. 
@@ -90,7 +100,10 @@
             prototyping with placeholder assets, which were seamlessly handed off to artists.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-levelsetup.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-levelsetup.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight">Level System</h2>
           <h4>
             Although each level appears independent to the player, the game runs in a single scene to maintain immersion. 
@@ -98,7 +111,10 @@
             This is handled through trigger boxes that notify the manager when a player enters a room.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-lock.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-lock.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight">Light and Lock</h2>
           <h4>
             Lighting is controlled via a Line Renderer, while a script handles interactions with hit objects, including mirrors that 
@@ -110,7 +126,10 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Level Designer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-learn.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-learn.jpg"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
+        @toggle="setActive">
           <h2 class="highlight">Learning Through Play</h2>
           <h4>
             The game was designed to let players experience the mechanics during gameplay. Therefore, the features were 
@@ -118,7 +137,10 @@
             be clearly understandable, while at the same time engaging enough to maintain the players’ motivation.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-complexity.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/LiK/LiK-InfoPanel-complexity.jpg"
+        id="2-2"
+        :isExpanded="activeId === '2-2'"
+        @toggle="setActive">
           <h2 class="highlight">Testing and Challenge</h2>
           <h4>
             As players progress, previously introduced mechanics are expanded to increase complexity. This is achieved 

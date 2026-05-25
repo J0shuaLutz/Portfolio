@@ -21,7 +21,14 @@ import { h } from 'vue';
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -70,14 +77,20 @@ import { h } from 'vue';
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Structure">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Separation.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Separation.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight">Separation</h2>
           <h4>
             The AaSS is split into three core components for better readability and usability. The Manager handles core logic and system integration, 
             while AbilityAndStatusData stores all relevant data. Actors interact with the system via a dedicated component.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Data.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Data.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight">Ability and Status Data</h2>
           <h4>
             To ensure correct processing and structuring of data, the Manager requires separate DataTables for Abilities and Status Effects, 
@@ -85,7 +98,10 @@ import { h } from 'vue';
             corresponding DataTables.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Manager.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Manager.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight">Ability and Status Manager</h2>
           <h4>
             The Manager stores and loads all active abilities and status effects. It defines three core events per system: Activation, 
@@ -93,7 +109,10 @@ import { h } from 'vue';
             Additional elements such as particle effects are also managed, assigned to actors when needed.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Comp.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Comp.jpg"
+        id="1-4"
+        :isExpanded="activeId === '1-4'"
+        @toggle="setActive">
           <h2 class="highlight">Ability and Status Component</h2>
           <h4>
             Using the component, actors can store abilities and status effects and execute them in a context-specific way. Additionally, 
@@ -104,7 +123,10 @@ import { h } from 'vue';
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Content">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Async.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Async.jpg"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
+        @toggle="setActive">
           <h2 class="highlight">Async Loading</h2>
           <h4>
             Since abilities and status effects include assets like particles and materials, they are loaded asynchronously to avoid 
@@ -112,7 +134,10 @@ import { h } from 'vue';
             they are usually triggered through abilities.       
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-SoftRef.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-SoftRef.jpg"
+        id="2-2"
+        :isExpanded="activeId === '2-2'"
+        @toggle="setActive">
           <h2 class="highlight">Soft References</h2>
           <h4>
             While the Data Assets for individual elements store all variables as hard references, the elements in the ability and status DataTables 
@@ -120,7 +145,10 @@ import { h } from 'vue';
             individual parts separately.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Timer.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Timer.jpg"
+        id="2-3"
+        :isExpanded="activeId === '2-3'"
+        @toggle="setActive">
           <h2 class="highlight">Timer for Status-Effects</h2>
           <h4>
             The component includes a timer for status effects, allowing them to be executed at defined intervals (e.g., every second) to apply 
@@ -128,7 +156,10 @@ import { h } from 'vue';
             when required by an active effect.       
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Tag.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/AaSS/AaSS-InfoPanel-Tag.jpg"
+        id="2-4"
+        :isExpanded="activeId === '2-4'"
+        @toggle="setActive">
           <h2 class="highlight">Tag-System</h2>
           <h4>
             Using a simplified tag system, content can be extended directly within the engine without modifying C++ code. The system is used to 

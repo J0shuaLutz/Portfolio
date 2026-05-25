@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -77,7 +84,10 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Gameplay Programmer">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Spawner.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Spawner.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight"> Spawn-System</h2>
           <h4>
             To encourage player movement, a trigger-based spawn system was implemented. As players move through these triggers placed 
@@ -85,7 +95,10 @@
             Each trigger contains predefined spawn points with data on NPC types, level context, and difficulty.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-NPC.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-NPC.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight"> NPC / Enemys</h2>
           <h4>
             To efficiently implement and expand different enemy types, a scalable NPC system was developed. It is based on a 
@@ -93,7 +106,10 @@
             Interactions such as damage types and attacks are handled through an interface-based system.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Weapon.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Weapon.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight"> Special Attacks</h2>
           <h4>
             Special abilities unlocked via meta progression were highly diverse in their requirements, with minimal overlap in 
@@ -105,7 +121,10 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Producer / Team Lead">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Producer.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/SoS/SoS-InfoPanel-Producer.jpg"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
+        @toggle="setActive">
           <h4>
             During phase two, I led production and team management, including:
           </h4>

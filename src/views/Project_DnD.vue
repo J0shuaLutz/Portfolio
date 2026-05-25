@@ -20,7 +20,14 @@
         frameColor2: "rgba(159,195,245,1)",
         frameColor3: "rgba(255,109,218,1)",
         frameColor4: "rgba(1, 57, 104,1)",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        activeId: null as string | null,
+        items: []
+      }
+    },
+    methods:{
+      setActive(id: string) {
+        this.activeId = this.activeId === id ? null : id;
       }
     }
   }
@@ -66,7 +73,10 @@
     </section>
     <section class="list" id="Info1">
       <itemlist :bgColor="frameColor" Title="Building a World">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-WorldMap.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-WorldMap.jpg"
+        id="1-1"
+        :isExpanded="activeId === '1-1'"
+        @toggle="setActive">
           <h2 class="highlight">From Large to Small</h2>
           <h4>
             During the development of my campaign, I realized the importance of starting broad and refining details later. This was essential 
@@ -74,7 +84,10 @@
             I developed political, economic, and historical systems that led to a variety of side quests.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Quest.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Quest.jpg"
+        id="1-2"
+        :isExpanded="activeId === '1-2'"
+        @toggle="setActive">
           <h2 class="highlight">Open World Problem</h2>
           <h4>
             After several years, a common open-world issue appeared in my campaign: players focused on side quests while the main story 
@@ -82,7 +95,10 @@
             prioritization and player guidance, while the analog format allowed flexible adaptation.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Media.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Media.jpg"
+        id="1-3"
+        :isExpanded="activeId === '1-3'"
+        @toggle="setActive">
           <h2 class="highlight">Integrating different Media</h2>
           <h4>
             In addition to classic D&D visual aids such as miniatures, floors, and walls, I use images, music, 
@@ -90,7 +106,10 @@
             generated voices and images have been integrated, speeding up creation and improving immersion.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Magic.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Magic.jpg"
+        id="1-4"
+        :isExpanded="activeId === '1-4'"
+        @toggle="setActive">
           <h2 class="highlight">Systems</h2>
           <h4>
             Beyond the standard D&D mechanics, I added additional systems to support a more grounded and consistent world, 
@@ -102,7 +121,10 @@
     </section>
     <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Gameplay and Fun">
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Quest2.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Quest2.jpg"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
+        @toggle="setActive">
           <h2 class="highlight">Challenges</h2>
           <h4>
             In an open-world D&D campaign, encounter difficulty is highly situational due to group size differences and variable timing of 
@@ -110,7 +132,10 @@
             into the narrative, but at a high cost to maintain risk and consequences.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-System.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-System.jpg"
+        id="2-2"
+        :isExpanded="activeId === '2-2'"
+        @toggle="setActive">
           <h2 class="highlight">Action and Reaction</h2>
           <h4>
             An interactive world is strongly shaped by player actions, and pen-and-paper systems allow flexible adaptation compared to 
@@ -118,7 +143,10 @@
             This led me to focus more on smaller elements like trade routes to support emergent gameplay.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Map.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Map.jpg"
+        id="2-3"
+        :isExpanded="activeId === '2-3'"
+        @toggle="setActive">
           <h2 class="highlight">Reward and Meta-Gaming</h2>
           <h4>
             Rewards in D&D include experience, gold, items, and also narrative or informational benefits. Their value depends 
@@ -126,7 +154,10 @@
             experience to reinforce certain behaviors, even if they are not always optimal.
           </h4>
         </ProjectInfo>
-        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Size.jpg">
+        <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/DnD/DnD-InfoPanel-Size.jpg"
+        id="2-4"
+        :isExpanded="activeId === '2-4'"
+        @toggle="setActive">
           <h2 class="highlight">Feedback</h2>
           <h4>
             At the end of each session, I meet with the group to gather feedback and discuss what worked well and what did not. This 

@@ -2,7 +2,9 @@
     <div
     :id="id"
     :style = "{'--BorderRadius': BorderRadius, '--BackColor': BackColor}"
-    class="ProjectInfo device">
+    class="ProjectInfo device"
+    :class="{ expanded: isExpanded}"
+    @click="toggle">
         <img class="Image" :src="Image" alt="InfoImage" :style = "{'--BorderRadius': BorderRadius}"/>
         <div class="InfoText">
             <slot>
@@ -19,7 +21,13 @@
             id: {type: String, default: "item"},
             Image: {type: String, default: "/images/Projects/InfoPanel-Basic.jpg"},
             BackColor: {type: String, default: "rgba(46, 46, 146, 1.0)"},
-            BorderRadius: {type: String, default: "0px"}
+            BorderRadius: {type: String, default: "0px"},
+            isExpanded: {type: Boolean, default: false}
+        }, 
+        methods: {
+            toggle() {
+                this.$emit('toggle', this.id);
+            }
         }
     }
 </script>
@@ -28,12 +36,12 @@
 
     .ProjectInfo{
         display: grid;
-        grid-template-rows: 1fr 1fr;
         border-radius: var(--BorderRadius);
         background-color: var(--BackColor);
         overflow: hidden;
         padding:0;
         margin: 20px;
+        cursor: pointer;
         transition: 1s;
     }
 
@@ -48,11 +56,22 @@
     }
 
     .device{
+        grid-template-rows: 1fr 1fr;
         min-width: 300px;
         min-height: 300px;
         max-width: 300px;
         max-height: 300px;
+        transition: 1s;
     }
+
+    .device.expanded {
+            grid-template-rows: 4fr 1fr;
+            min-width: 90vw;
+            min-height: 90vw;
+            max-width: 90vw;
+            max-height: 90vw;
+            transition: 1s;
+        }
 
     .InfoText{
         padding: 2%;
@@ -62,10 +81,21 @@
 
     @media (min-width: 759px) {
         .device {
+            grid-template-rows: 1fr 1fr;
             min-width: 600px;
             min-height: 600px;
             max-width: 600px;
             max-height: 600px;
+            transition: 1s;
+        }
+
+        .device.expanded {
+            grid-template-rows: 4fr 1fr;
+            min-width: 90vw;
+            min-height: 90vw;
+            max-width: 90vw;
+            max-height: 90vw;
+            transition: 1s;
         }
     }
 </style>
