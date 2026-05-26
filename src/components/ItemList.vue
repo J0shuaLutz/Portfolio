@@ -2,7 +2,7 @@
     <div
     :id="id">
         <h2 class="highlight4">{{ Title }}</h2>
-        <frame :bgColor=bgColor :BorderRadius="0">
+        <frame :bgColor=bgColor :BorderRadius="0" :Margin="'0px'">
             <div class="ScrollWrap">
                 <slot class="ScrollList" >
                 </slot>

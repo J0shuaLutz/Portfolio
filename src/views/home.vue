@@ -217,6 +217,7 @@
                         <img class="Image" src="/images/allplan.png" alt="Allplan">
                     </div>
                 </frame>
+                <div class = "Spacer"></div>
                 <frame class = "Spacer" :bgColor=frameColor :BorderRadius=borderRadius>
                     <h2 class ="SmallSpacer highlight">Skill Matrix</h2>
                     <h3 class ="SmallSpacer blue centerText">Programming</h3>
@@ -329,6 +330,7 @@
                 <img class="Image" src="/images/allplan.png" alt="Allplan">
             </div>
         </frame>
+        <div class = "Spacer"></div>
         <frame class = "Spacer" :bgColor=frameColor :BorderRadius=borderRadius>
             <h2 class ="SmallSpacer highlight">Skill Matrix</h2>
             <h3 class ="SmallSpacer blue centerText">Programming</h3>
@@ -379,6 +381,7 @@
                 </frame>
             </frame>
         </frame>
+        <div class = "Spacer"></div>
         <div>
             <h4 class="centerText Spacer">
                 My passion
