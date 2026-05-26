@@ -113,6 +113,10 @@ a{
   font-size: clamp(30px,2.5vw,48px);
 }
 
+.highlight5{
+  font-size: clamp(14px,2.5vw,18px);
+}
+
 .green{
   color: var(--textColor5);
 }
@@ -123,6 +127,10 @@ a{
 
 .white{
   color: var(--textColor3);
+}
+
+.blue{
+  color: var(--textColor1);
 }
 
 

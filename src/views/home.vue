@@ -218,30 +218,52 @@
                     </div>
                 </frame>
                 <frame class = "Spacer" :bgColor=frameColor :BorderRadius=borderRadius>
-                    <h2>Skill Matrix</h2>
-                    <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                        <h3>UE Blueprint</h3>
-                        <frame :bgColor=frameColor3 :BorderRadius=borderRadius>
+                    <h2 class ="SmallSpacer highlight">Skill Matrix</h2>
+                    <h3 class ="SmallSpacer blue centerText">Programming</h3>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">UE Blueprint</h3>
+                        <frame :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                         </frame>
                     </frame>
-                    <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                        <h3>C++</h3>
-                        <frame :style="{ width: '75%' }"  :bgColor=frameColor3 :BorderRadius=borderRadius>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">C++</h3>
+                        <frame :style="{ width: '75%' }"  :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                         </frame>
                     </frame>
-                    <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                        <h3>C#</h3>
-                        <frame :style="{ width: '60%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">C#</h3>
+                        <frame :style="{ width: '60%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                         </frame>
                     </frame>
-                    <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                        <h3>GLSL</h3>
-                        <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">GLSL</h3>
+                        <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                         </frame>
                     </frame>
-                    <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                        <h3>Type Script</h3>
-                        <frame :style="{ width: '45%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+                    <frame class="Spacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">Type Script</h3>
+                        <frame :style="{ width: '45%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                        </frame>
+                    </frame>
+                    <h3 class ="SmallSpacer blue centerText">Art</h3>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">Blender</h3>
+                        <frame :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                        </frame>
+                    </frame>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">Viz Artist</h3>
+                        <frame :style="{ width: '70%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                        </frame>
+                    </frame>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">Adobe</h3>
+                        <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                        </frame>
+                    </frame>
+                    <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                        <h3 class="highlight5">Affinity</h3>
+                        <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                         </frame>
                     </frame>
                 </frame>
@@ -308,30 +330,52 @@
             </div>
         </frame>
         <frame class = "Spacer" :bgColor=frameColor :BorderRadius=borderRadius>
-            <h2>Skill Matrix</h2>
-            <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                <h3>UE Blueprint</h3>
-                <frame :bgColor=frameColor3 :BorderRadius=borderRadius>
+            <h2 class ="SmallSpacer highlight">Skill Matrix</h2>
+            <h3 class ="SmallSpacer blue centerText">Programming</h3>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">UE Blueprint</h3>
+                <frame :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                 </frame>
             </frame>
-            <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                <h3>C++</h3>
-                <frame :style="{ width: '75%' }"  :bgColor=frameColor3 :BorderRadius=borderRadius>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">C++</h3>
+                <frame :style="{ width: '75%' }"  :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                 </frame>
             </frame>
-            <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                <h3>C#</h3>
-                <frame :style="{ width: '60%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">C#</h3>
+                <frame :style="{ width: '60%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                 </frame>
             </frame>
-            <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                <h3>GLSL</h3>
-                <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">GLSL</h3>
+                <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                 </frame>
             </frame>
-            <frame class="SmallSpacer" :bgColor=frameColor2 :BorderRadius=borderRadius>
-                <h3>Type Script</h3>
-                <frame :style="{ width: '45%' }" :bgColor=frameColor3 :BorderRadius=borderRadius>
+            <frame class="Spacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">Type Script</h3>
+                <frame :style="{ width: '45%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                </frame>
+            </frame>
+            <h3 class ="SmallSpacer blue centerText">Art</h3>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">Blender</h3>
+                <frame :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                </frame>
+            </frame>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">Viz Artist</h3>
+                <frame :style="{ width: '70%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                </frame>
+            </frame>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">Adobe</h3>
+                <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
+                </frame>
+            </frame>
+            <frame class="SmallSpacer horizontalSkillGrid" :bgColor=frameColor2 :BorderRadius=borderRadius :Padding="'0px'">
+                <h3 class="highlight5">Affinity</h3>
+                <frame :style="{ width: '50%' }" :bgColor=frameColor3 :BorderRadius=borderRadius :Margin="'10px'">
                 </frame>
             </frame>
         </frame>
@@ -515,6 +559,11 @@
         margin-bottom: 10px;
         padding: 10px;
         align-items: center;
+    }
+
+    .horizontalSkillGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .ToolGrid{

@@ -66,14 +66,14 @@
     }
 
     .device.expanded {
-            grid-template-rows: 2.25fr 1fr;
-            min-width: 90vw;
-            min-height: 90vw;
-            max-width: 90vw;
-            max-height: 180vw;
-            transition: 1s;
-            scroll-snap-align: center;
-        }
+        grid-template-rows: 2.25fr 1fr;
+        min-width: 90vw;
+        min-height: 90vw;
+        max-width: 90vw;
+        max-height: 180vw;
+        transition: 1s;
+        scroll-snap-align: center;
+    }
 
     .InfoText{
         height: 100%;
