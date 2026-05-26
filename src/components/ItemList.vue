@@ -36,7 +36,8 @@
         align-items: center;
         justify-content: flex-start;
 
-        width: 100%;
+        width: max-content;
+        max-width: 100%;
         overflow-x: auto;
 
         margin-left: auto;
