@@ -143,11 +143,11 @@
       </itemlist>
     </section>
 
-    <section class="list" id="Info1">
+    <section class="list" id="Info2">
       <itemlist :bgColor="frameColor" Title="Environment">
         <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/GauntledOfGods/GOG-Environment_Pyramid.png"
-        id="1-1"
-        :isExpanded="activeId === '1-1'"
+        id="2-1"
+        :isExpanded="activeId === '2-1'"
         @toggle="setActive">
           <h2 class="highlight">Pyramid</h2>
           <h4>
@@ -157,8 +157,8 @@
           </h4>
         </ProjectInfo>
         <ProjectInfo :BorderRadius=borderRadius :BackColor=frameColor4 Image="/Portfolio/images/Projects/GauntledOfGods/GOG-Environment_Rope.png"
-        id="1-2"
-        :isExpanded="activeId === '1-2'"
+        id="2-2"
+        :isExpanded="activeId === '2-2'"
         @toggle="setActive">
           <h2 class="highlight">Rope Automation</h2>
           <h4>
