@@ -139,7 +139,7 @@
                 </div>
                 <div class="horizontalInfoGrid">
                     <h5 class="rightText">Status</h5>
-                    <h6 class="green">Hireable</h6>
+                    <h6 class="textColor2">currently unavailable</h6>
                 </div>
                 <div class="horizontalInfoGrid">
                     <h5 class="rightText">Contact</h5>
@@ -192,7 +192,7 @@
             </div>
             <div class="horizontalInfoGrid">
                 <h5 class="rightText">Status</h5>
-                <h6 class="green">Hireable</h6>
+                <h6 class="textColor2">currently unavailable</h6>
             </div>
             <div class="horizontalInfoGrid">
                 <h5 class="rightText">Contact</h5>
