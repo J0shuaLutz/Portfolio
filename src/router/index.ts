@@ -10,6 +10,7 @@ import Project_DreamSequence from '@/views/Project_DreamSequence.vue'
 import Project_Grid from '@/views/Project_Grid.vue'
 import Project_AaSS from '@/views/Project_AaSS.vue'
 import Project_Dnd from '@/views/Project_DnD.vue'
+import Project_GauntledOfGods from '@/views/Project_GauntledOfGods.vue'
 
 // Typisierung der Routen mit RouteRecordRaw
 const routes: Array<RouteRecordRaw> = [
@@ -62,6 +63,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/Dnd',
         name: "Dnd",
         component: Project_Dnd
+     },
+     {
+        path: '/GauntledOfGods',
+        name: "GauntledOfGods",
+        component: Project_GauntledOfGods
      }
 ]
 

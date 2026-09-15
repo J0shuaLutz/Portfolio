@@ -456,6 +456,13 @@
                 Image="/Portfolio/images/Projects/DreamSequence/DreamSequence-FrontPanel.png"
                 Path="/DreamSequence"
             />
+            <item :BorderRadius=borderRadius :ButtonColor=frameColor
+                Title="Gauntled of Gods"
+                Description="A swarm of flies forming a human figure within its environment."
+                ProjectStyle="Render Challenge"
+                Image="/Portfolio/images/Projects/GauntledOfGods/GOG-FrontPanel.png"
+                Path="/GauntledOfGods"
+            />
         </itemlist>
     </section>
     <section class="list" id = "Design">
